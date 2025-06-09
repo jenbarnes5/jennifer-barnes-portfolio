@@ -23,7 +23,7 @@
             color: #fff;
             padding-top: 30px;
             min-height: 70px;
-            border-bottom: #77aaff 3px solid;
+            border-bottom: #0779e4 3px solid;
         }
         header a {
             color: #fff;
@@ -39,136 +39,169 @@
             display: inline;
             padding: 0 20px 0 20px;
         }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        section {
+        .main-content {
             padding: 20px;
-            margin: 20px 0;
             background: #fff;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .main-content h1, .main-content h2, .main-content h3 {
+            color: #333;
+        }
+        .main-content p {
+            color: #666;
+        }
+        .projects, .contact {
+            margin-top: 40px;
+        }
+        .projects ul, .contact ul {
+            padding: 0;
+            list-style: none;
+        }
+        .projects li, .contact li {
+            background: #f4f4f4;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: #ccc 1px solid;
         }
         footer {
             background: #333;
             color: #fff;
             text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .download-resume {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
             padding: 10px;
-            margin-top: 20px;
+            background: #0779e4;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: #ccc 1px solid;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px;
+            background: #0779e4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <div id="branding">
-                <h1>Jennifer Barnes</h1>
-                <p>Technical Program Manager</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#awards">Awards</a></li>
-                    <li><a href="#volunteer">Volunteer Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <h1>Jennifer Barnes</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </header>
-
-    <section id="home" class="container">
-        <h2>Welcome</h2>
-        <p>Hi, I’m Jennifer Barnes — a seasoned Technical Program Manager with over 15 years of experience leading high-impact programs in defense and technology. I specialize in aligning business strategy with technical execution, optimizing operations, and delivering scalable solutions. Whether it’s managing billion-dollar portfolios or mentoring the next generation of coders, I bring clarity, collaboration, and results to every challenge.</p>
-    </section>
-
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>15+ years in program management across defense and tech sectors</p>
-        <p>Expert in Agile, Scrum, and PMP methodologies</p>
-        <p>Proven success in financial performance, BI strategy, and manufacturing optimization</p>
-        <p>Passionate about mentoring, STEM education, and community engagement</p>
-        <h3>Fun Facts:</h3>
-        <p>Yoga enthusiast and puzzle solver</p>
-        <p>Coach, mentor, and creative maker (laser engraving, custom apparel)</p>
-        <p>Love camping and horseback riding with my family</p>
-    </section>
-
-    <section id="experience" class="container">
-        <h2>Experience</h2>
-        <h3>Dell Technologies – Portfolio Performance Manager</h3>
-        <p><em>Apr 2023 – Aug 2024</em></p>
-        <ul>
-            <li>Managed $12B ProDeploy Client Suite, increasing revenue by 6%</li>
-            <li>Secured $42M portfolio growth in 6 months</li>
-            <li>Applied Agile & Scrum to optimize PC deployment services</li>
-        </ul>
-        <h3>Dell Technologies – BI Lead, Global Channel Services</h3>
-        <p><em>Jun 2017 – Apr 2023</em></p>
-        <ul>
-            <li>Led BI strategy post-merger, driving $101B business growth</li>
-            <li>Developed KPI dashboards using SQL, Python, Power BI</li>
-            <li>Strengthened compliance and partner confidence</li>
-        </ul>
-        <h3>EMC – New Product Introduction, Program Manager</h3>
-        <p><em>Aug 2015 – Jun 2017</em></p>
-        <ul>
-            <li>Led factory readiness for VPLEX global manufacturing launches</li>
-            <li>Transformed business objectives into actionable deliverables</li>
-        </ul>
-        <h3>BAE Systems – Operations Program Manager</h3>
-        <p><em>Feb 2014 – Aug 2015</em></p>
-        <ul>
-            <li>Managed Low-Rate Initial Production (LRIP) for JSF signal detection apertures</li>
-            <li>Accelerated product delivery by 45 days</li>
-        </ul>
-    </section>
-
-    <section id="skills" class="container">
-        <h2>Core Skills</h2>
-        <ul>
-            <li>Data Analysis & Visualization (Power BI, SQL, Python)</li>
-            <li>Agile Program Management & Strategic Roadmapping</li>
-            <li>Manufacturing & Product Lifecycle Optimization</li>
-            <li>Cross-functional Leadership & Stakeholder Engagement</li>
-        </ul>
-    </section>
-
-    <section id="awards" class="container">
-        <h2>Awards & Recognition</h2>
-        <ul>
-            <li>Executive praise for BI strategy transformation</li>
-            <li>Restored contract viability for JSF Apertures</li>
-            <li>Led United Way campaign as Loaned Executive</li>
-            <li>Multiple leadership & operational excellence awards</li>
-        </ul>
-    </section>
-
-    <section id="volunteer" class="container">
-        <h2>Volunteer Work</h2>
-        <h3>Girls Who Code Instructor</h3>
-        <p>Empowering young girls in STEM</p>
-        <h3>Youth Basketball Coach</h3>
-        <p>Building confidence and teamwork</p>
-        <h3>PTO Finance Chair</h3>
-        <p>Organizing large-scale school events</p>
-    </section>
-
-    <section id="contact" class="container">
-        <h2>Contact</h2>
-        <p>Email: jenbarnes5@gmail.com</p>
-        <p>Location: Townsend, MA</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/jennifer-barnes-062b6b/">Jennifer Barnes</a></p>
-        <p>Phone: 978-549-1055</p>
-    </section>
-
+    <div class="container">
+        <div class="main-content">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Hi, I’m Jennifer Barnes — a seasoned Technical Program Manager with over 15 years of experience leading high-impact programs in defense and technology. I specialize in aligning business strategy with technical execution, optimizing operations, and delivering scalable solutions. Whether it’s managing billion-dollar portfolios or mentoring the next generation of coders, I bring clarity, collaboration, and results to every challenge.</p>
+                <p>Fun Facts:</p>
+                <ul>
+                    <li>Yoga enthusiast and puzzle solver</li>
+                    <li>Coach, mentor, and creative maker (laser engraving, custom apparel)</li>
+                    <li>Love camping and horseback riding with my family</li>
+                </ul>
+            </section>
+            <section id="experience">
+                <h2>Experience</h2>
+                <h3>Dell Technologies – Portfolio Performance Manager</h3>
+                <p>Apr 2023 – Aug 2024</p>
+                <ul>
+                    <li>Managed $12B ProDeploy Client Suite, increasing revenue by 6%</li>
+                    <li>Secured $42M portfolio growth in 6 months</li>
+                    <li>Applied Agile & Scrum to optimize PC deployment services</li>
+                </ul>
+                <h3>Dell Technologies – BI Lead, Global Channel Services</h3>
+                <p>Jun 2017 – Apr 2023</p>
+                <ul>
+                    <li>Led BI strategy post-merger, driving $101B business growth</li>
+                    <li>Developed KPI dashboards using SQL, Python, Power BI</li>
+                    <li>Strengthened compliance and partner confidence</li>
+                </ul>
+                <h3>EMC – New Product Introduction, Program Manager</h3>
+                <p>Aug 2015 – Jun 2017</p>
+                <ul>
+                    <li>Led factory readiness for VPLEX global manufacturing launches</li>
+                    <li>Transformed business objectives into actionable deliverables</li>
+                    <li>Enhanced operational efficiency across global production</li>
+                </ul>
+                <h3>BAE Systems – Operations Program Manager</h3>
+                <p>Feb 2014 – Aug 2015</p>
+                <ul>
+                    <li>Managed Low-Rate Initial Production (LRIP) for JSF signal detection apertures</li>
+                    <li>Accelerated product delivery by 45 days</li>
+                    <li>Resolved manufacturing defects, restoring contract viability</li>
+                </ul>
+            </section>
+            <section id="skills">
+                <h2>Core Skills</h2>
+                <ul>
+                    <li>Data Analysis & Visualization (Power BI, SQL, Python)</li>
+                    <li>Agile Program Management & Strategic Roadmapping</li>
+                    <li>Manufacturing & Product Lifecycle Optimization</li>
+                    <li>Cross-functional Leadership & Stakeholder Engagement</li>
+                </ul>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <h3>Enterprise Platforms</h3>
+                <ul>
+                    <li>Strong understanding of enterprise platforms (Snowflake, Tableau, SAP, Salesforce.com)</li>
+                    <li>Experience with data frameworks, objectives, and operating models</li>
+                    <li>Composite model leveraging both Direct query and import, allowing for tracking of progress towards key initiatives</li>
+                </ul>
+                <h3>Collaboration with Bain Consultants</h3>
+                <ul>
+                    <li>Strong background in data, analytics, and reporting</li>
+                    <li>Worked with consultants from Bain with Sr VP/VP</li>
+                </ul>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Feel free to reach out to me via email or LinkedIn:</p>
+                <ul>
+                    <li>Email: jenbarnes5@gmail.com</li>
+                    <li>Location: Townsend, MA</li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/jennifer-barnes-062b6b/">Jennifer Barnes</a></li>
+                    <li>Phone: 978-549-1055</li>
+                </ul>
+                <a href="Jennifer_Barnes_Resume.pdf" class="download-resume">Download Resume</a>
+                <form class="contact-form" action="mailto:jenbarnes5@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </div>
+    </div>
     <footer>
         <p>&copy; 2023 Jennifer Barnes. All rights reserved.</p>
     </footer>
