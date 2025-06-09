@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
     <title>Jennifer Barnes - Technical Program Manager</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Forte Forward, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -17,12 +18,13 @@
             margin: auto;
             overflow: hidden;
         }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
+       header {
+            background: 
+url('header-bg.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
         }
         header a {
             color: #fff;
@@ -31,157 +33,148 @@
             font-size: 16px;
         }
         header ul {
-            none;
+            padding: 0;
+            list-style: none;
         }
         header li {
             display: inline;
             padding: 0 20px 0 20px;
         }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        section {
+        .main-content {
             padding: 20px;
-            margin: 20px 0;
             background: #fff;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
             margin-top: 20px;
         }
-        .btn {
-            display: inline-block;
-            color: #333;
-            background: #77aaff;
-            padding: 10px 20px;
-            text-decoration: none;
+        .main-content h1 {
+            text-align: center;
+        }
+        .main-content p {
+            text-align: justify;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section h2 {
+            border-bottom: #0779e4 2px solid;
+            padding-bottom: 10px;
+        }
+        .contact-form {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .contact-form h2 {
+            text-align: center;
+        }
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form label {
+            margin: 10px 0 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
             border-radius: 5px;
         }
-        .btn:hover {
-            background: #555;
+        .contact-form button {
+            padding: 10px;
+            background: #0779e4;
             color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #055a9c;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <div id="branding">
-                <h1>Jennifer Barnes</h1>
-                <p>Technical Program Manager</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#awards">Awards</a></li>
-                    <li><a href="#volunteer">Volunteer Work</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <h1>Jennifer Barnes</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#volunteer">Volunteer Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </header>
-
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>Experienced technical program manager with 15+ years in defense and technology, driving strategy, operational efficiency, and cross-functional collaboration. Skilled in Agile, Scrum, and PMP, with a strong focus on risk assessment, data-driven decision-making, and scalable business growth.</p>
-        <p>Fun Facts: Yoga enthusiast, puzzle solver, coach, mentor, and creative maker (laser engraving, custom apparel). Love camping and horseback riding with my family.</p>
-    </section>
-
-    <section id="experience" class="container">
-        <h2>Experience</h2>
-        <h3>Dell Technologies – Portfolio Performance Manager</h3>
-        <p>Apr 2023 – Aug 2024</p>
-        <ul>
-            <li>Managed $12B ProDeploy Client Suite, increasing revenue by 6%.</li>
-            <li>Secured $42M portfolio growth in 6 months.</li>
-            <li>Applied Agile & Scrum to optimize PC deployment services.</li>
-        </ul>
-        <h3>Dell Technologies – BI Lead, Global Channel Services</h3>
-        <p>Jun 2017 – Apr 2023</p>
-        <ul>
-            <li>Led BI strategy post-merger, driving $101B business growth.</li>
-            <li>Developed KPI dashboards using SQL, Python, Power BI.</li>
-            <li>Strengthened compliance and partner confidence.</li>
-        </ul>
-        <h3>EMC – New Product Introduction, Program Manager</h3>
-        <p>Aug 2015 – Jun 2017</p>
-        <ul>
-            <li>Led factory readiness for VPLEX global manufacturing launches.</li>
-            <li>Transformed business objectives into actionable deliverables.</li>
-        </ul>
-        <h3>BAE Systems – Operations Program Manager</h3>
-        <p>Feb 2014 – Aug 2015</p>
-        <ul>
-            <li>Managed Low-Rate Initial Production (LRIP) for JSF signal detection apertures.</li>
-            <li>Accelerated product delivery by 45 days, achieving a $7.5M sales shift.</li>
-        </ul>
-    </section>
-
-    <section id="skills" class="container">
-        <h2>Core Skills</h2>
-        <ul>
-            <li>Data Analysis & Visualization (Power BI, SQL, Python)</li>
-            <li>Agile Program Management & Strategic Roadmapping</li>
-            <li>Manufacturing & Product Lifecycle Optimization</li>
-            <li>Cross-functional Leadership & Stakeholder Engagement</li>
-        </ul>
-    </section>
-
-    <section id="awards" class="container">
-        <h2>Awards & Recognition</h2>
-        <ul>
-            <li>Executive praise for BI strategy transformation</li>
-            <li>Restored contract viability for JSF Apertures</li>
-            <li>Led United Way campaign as Loaned Executive</li>
-            <li>Multiple leadership & operational excellence awards</li>
-        </ul>
-    </section>
-
-    <section id="volunteer" class="container">
-        <h2>Volunteer Work</h2>
-        <h3>Girls Who Code Instructor</h3>
-        <p>Empowering young girls in STEM</p>
-        <h3>Youth Basketball Coach</h3>
-        <p>Building confidence and teamwork</p>
-        <h3>PTO Finance Chair</h3>
-        <p>Organizing large-scale school events</p>
-    </section>
-
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <p>PM led large-scale, complex initiatives in a global environment</p>
-        <p>Strong understanding of enterprise platforms (Snowflake, Tableau, SAP, Salesforce.com)</p>
-        <p>Experience with data frameworks, objectives and operating models</p>
-        <p>Composite model leveraging both Direct query and import, allowing for tracking of progress towards key initiatives</p>
-        <p>Strong background in data, analytics and reporting including working with consultants from Bain with Sr VP/VP</p>
-    </section>
-
-    <section id="contact" class="container">
-        <h2>Contact</h2>
-        <form action="https://formspree.io/f/{your_form_id}" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            <button type="submit" class="btn">Send</button>
-        </form>
-   footer>
-        <p>Jennifer Barnes | Townsend, MA | <a href="mailto:jenbarnes5@gmail.com">jenbarnes5@gmail.com</a> | <a href="https://www.linkedin.com/in/jennifer-barnes-062b6b/">LinkedIn</a></p>
-    </footer>
+    <div class="container">
+        <div class="main-content">
+            <section id="about" class="section">
+                <h2>About Me</h2>
+                <p>Hi, I’m Jennifer Barnes — a seasoned Technical Program Manager with over 15 years of experience leading high-impact programs in defense and technology. I specialize in aligning business strategy with technical execution, optimizing operations, and delivering scalable solutions. Whether it’s managing billion-dollar portfolios or mentoring the next generation of coders, I bring clarity, collaboration, and results to every challenge.</p>
+                <p>Fun Facts:</p>
+                <ul>
+                    <li>Yoga enthusiast and puzzle solver with a passion for mentoring</li>
+                   
+            
+                </ul>
+            </section>
+            <section id="experience" class="section">
+                <h2>Experience</h2>
+                <h3>Dell Technologies – Portfolio Performance Manager</h3>
+                <p>Apr 2023 – Aug 2024</p>
+                <ul>
+                    <li>Managed $12B ProDeploy Client Suite, increasing revenue by 6%</li>
+                    <li>Secured $42M portfolio growth in 6 months</li>
+                    <li>Applied Agile & Scrum to optimize PC deployment services</li>
+                </ul>
+                <h3>Dell Technologies – Business Intell Lead, Global Channel Services</h3>
+                <p>Jun 2017 – Apr 2023</p>
+                <ul>
+                    <li>Led BI strategy post-merger, driving $101B business growth</li>
+                    <li>Developed KPI dashboards using SQL, Python, Power BI</li>
+                    <li>Strengthened compliance and partner confidence</li>
+                </ul>
+                <!-- Add other roles similarly -->
+            </section>
+            <section id="skills" class="section">
+                <h2>Core Skills</h2>
+                <ul>
+                    <li>Data Analysis & Visualization (Power BI supported by SQL & Python)</li>
+                    <li>Agile, Scrum & PMP Program Management & Strategic Roadmapping</li>
+                    <li>Manufacturing & Product Lifecycle Optimization</li>
+                    <li>Cross-functional Leadership & Stakeholder Engagement</li>
+                </ul>
+            </section>
+            <section id="awards" class="section">
+                <h2>Awards & Recognition</h2>
+                <ul>
+                    <li>Executive praise for BI strategy transformation</li>
+                    <li>Restored contract viability for JSF Apertures</li>
+                    <li>Led United Way campaign as Loaned Executive</li>
+                    <li>Multiple leadership & operational excellence awards</li>
+                </ul>
+            </section>
+            <section id="volunteer" class="section">
+                <h2>Volunteer Work</h2>
+                <ul>
+                    <li>Girls Who Code Instructor – Empowering young girls in STEM through designing & delivering interactive coding sessions for Brownies, Juniors, and Cadettes</li>
+                    <li>Youth Basketball Coach – Building confidence and teamwork through strategic skill-building sessions</li>
+                    <li>PTO Finance & Events Chair – Organizing large-scale school events, managing financial strategy, optimizing cash flow and budgeting </li>
+                </ul>
+            </section>
+            <section id="contact" class="contact-form">
+                <h2>Contact Me</h2>
+                <form action="https://formspree.io/f/{your_form_id}" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
